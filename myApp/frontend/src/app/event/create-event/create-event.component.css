@@ -1,0 +1,17 @@
+h1{
+    color:#0C4271;
+    font-size:2rem;
+}
+
+.form-control, .form-select{
+    border: #0A81AB solid 1px !important;
+    color:#0C4271;
+    background-color: #F9DFDC;
+}
+.row{
+    color:#0C4271;
+}
+.mainContainer{
+    /* background-color: #F9DFDC; */
+    background-image: linear-gradient(90deg,#F9DFDC 0%, #0A81AB 100%);
+}

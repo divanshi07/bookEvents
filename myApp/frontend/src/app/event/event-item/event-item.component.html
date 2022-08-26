@@ -1,0 +1,18 @@
+
+<a style="cursor: pointer" [routerLink]="[index]" routerLinkActive="active" class="list-group-item clearfix">
+<div class="card mb-3">
+    <div class="row g-0">
+        <div class="col-md-3 img" [style.backgroundImage]="'url('+eventDet.imagePath+')'" >
+          <!-- <img src="../../assets/images/image1.jpg" class="img-fluid rounded-start" alt="..."> -->
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">{{eventDet.eventName | uppercase}}</h5>
+            <p class="card-text para">{{eventDet.eventDetails | shorten}}</p>
+            
+            <p class="card-text"><small class="text-muted">{{eventDet.eventVenue}}</small></p>
+          </div>
+        </div>
+      </div>
+</div>
+</a>

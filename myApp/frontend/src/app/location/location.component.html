@@ -1,0 +1,53 @@
+<br>
+<div class="mainContainer" *ngIf="!isSearched">
+    <div class="row">
+        <div class="col-lg-4 offset-4 col-md-6 offset-3 col-xs-12">
+            <h1>Search your event</h1>
+            <br>
+            <form [formGroup]="locationForm">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="form-group">
+                            <label for="name">Enter Name</label>
+                            <input type="text" id="name" formControlName="name" class="form-control">
+                        </div>
+                    </div>
+                </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="form-group">
+                                <label for="location">Location </label>
+                                <input type="text" id="location" formControlName="location" class="form-control">
+                            </div>
+                        </div>
+                    
+                    </div>
+            </form>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-lg-4 offset-4 col-md-8 offset-2 col-xs-12">
+            <div class="row">
+                <div class="col-xs-12">
+                    <button type="submit" class="btn btn-info" (click)="submitForm()">Search</button>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div *ngIf="isSearched">
+    <div class="mainContainer">
+        <hr>
+        <div class="row">
+          <div class="col-lg-5 offset-1 myList">
+            <app-event-item *ngFor="let eventDet of eventList;let i=index" [eventDet]="eventDet" [index]="eventDet.id"></app-event-item>
+          </div>
+          <div class="col-lg-4 offset-1" >
+            <router-outlet></router-outlet>
+          </div>
+        </div>
+      </div>
+</div>

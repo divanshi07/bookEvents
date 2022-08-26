@@ -1,0 +1,18 @@
+.navColor{
+    background-color: #0A81AB !important;
+}
+
+.nav-item .nav-link{
+    color:#F9DFDC
+}
+.navbar-brand{
+    color:#F9DFDC
+}
+
+.btn-outline-success{
+    color:#F9DFDC !important;
+    border: #F9DFDC solid 1px !important ;
+}
+.btn-outline-success:hover{
+    background-color: #393E46 !important;
+}

@@ -1,0 +1,93 @@
+
+<!-- <div class="mainContainer">
+<div class="row" *ngFor="let item of eventDanceList">
+    <div class="col-lg-6" >
+        <div class="card mb-3">
+            <div class="row g-0">
+                <div class="col-md-4 img" style="background-image:url('../../assets/images/dance.jpg');">
+                </div>
+                <div class="col-md-6">
+                  <div class="card-body">
+                    <h5 class="card-title">{{item.eventName | uppercase}}</h5>
+                    <p class="card-text para">{{item.eventDetails | shorten}}</p>
+                    
+                    <p class="card-text"><small class="text-muted">{{item.eventVenue}}</small></p>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>
+<hr class="division">
+<div class="row" >
+    <h3>Music</h3>
+
+    <div class="col-lg-3" *ngFor="let item of eventMusicList">
+        <div class="card mb-3">
+            <div class="row g-0">
+                <div class="col-md-5 img" style="background-image:url('../../assets/images/music.jpg');">
+   
+                </div>
+                <div class="col-md-6">
+                  <div class="card-body">
+                    <h5 class="card-title">{{item.eventName  | uppercase}}</h5>
+                    <p class="card-text para">{{item.eventDetails}}</p>
+                    <p class="card-text"><small class="text-muted">{{item.eventVenue}}</small></p>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>
+<hr class="division">
+<div class="row" >
+    <h3>Lietrary Events</h3>
+
+    <div class="col-lg-3" *ngFor="let item of eventLitList">
+        <div class="card mb-3">
+            <div class="row g-0">
+                <div class="col-md-5 img" style="background-image:url('../../assets/images/book.jpg');">
+                </div>
+                <div class="col-md-6">
+                  <div class="card-body">
+                    <h5 class="card-title">{{item.eventName  | uppercase}}</h5>
+                    <p class="card-text para">{{item.eventDetails}}</p>
+                    <p class="card-text"><small class="text-muted">{{item.eventVenue}}</small></p>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+    <hr class="division">
+    <div class="row" >
+        <h3>Movies</h3>
+        <div class="col-lg-3" *ngFor="let item of eventMovieList">
+            <div class="card mb-3">
+                <div class="row g-0">
+                    <div class="col-md-5 img" style="background-image:url('../../assets/images/movie.jpg');">
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card-body">
+                        <h5 class="card-title">{{item.eventName  | uppercase}}</h5>
+                        <p class="card-text para">{{item.eventDetails}}</p>
+                        <p class="card-text"><small class="text-muted">{{item.eventVenue}}</small></p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+</div>
+</div> -->
+
+<div class="mainContainer">
+  <hr>
+  <div class="row">
+    <div class="col-lg-5 offset-1 myList">
+      <app-event-item *ngFor="let eventDet of eventList;let i=index" [eventDet]="eventDet" [index]="eventDet.id"></app-event-item>
+    </div>
+    <div class="col-lg-4 offset-1" >
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
+

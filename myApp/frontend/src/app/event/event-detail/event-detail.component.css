@@ -1,0 +1,50 @@
+.card{
+    width: 100% !important;
+}
+.card-body{
+    padding-right: 0px;
+    /* background-color: #cd9fc3; */
+    min-height: 200px;
+}
+
+.card-text{
+    color: #0A81AB !important;
+}
+h5{
+    color:#0C4271
+}
+
+.img{
+    border-radius: 1rem;
+
+}
+.details{
+    color:#0A81AB
+}
+.card-footer{
+    background-color: #f7ebe9 !important;
+}
+.myButton{
+    background-color: #0C4271 !important;
+    color:#F9DFDC !important;
+}
+.modal-body{
+    color:#0A81AB !important;
+}
+.myEvent{
+    color:#0C4271;
+}
+.close{
+    border: red solid 1px;
+    color:red;
+}
+.closeButton{
+    border: red solid 1px;
+    color:red;
+    background-color: white;
+}
+.downloadBtn{
+    border: #0C4271 solid 1px;
+    color:#0A81AB;
+    background-color: white;
+}

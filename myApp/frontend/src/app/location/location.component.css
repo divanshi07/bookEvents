@@ -1,0 +1,16 @@
+h1{
+    color:#0C4271;
+    font-size:2rem;
+}
+
+.form-control, .form-select{
+    border: #0A81AB solid 1px !important;
+    color:#0C4271;
+}
+.row{
+    color:#0C4271;
+}
+.btn{
+    color:#F9DFDC !important;
+    background-color: #0C4271 !important; 
+}
